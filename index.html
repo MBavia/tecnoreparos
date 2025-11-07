@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TecnoReparos Service Manager</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Inter', 'sans-serif'],
+            },
+            colors: {
+              background: 'hsl(var(--background))',
+              foreground: 'hsl(var(--foreground))',
+              card: 'hsl(var(--card))',
+              'card-foreground': 'hsl(var(--card-foreground))',
+              popover: 'hsl(var(--popover))',
+              'popover-foreground': 'hsl(var(--popover-foreground))',
+              primary: 'hsl(var(--primary))',
+              'primary-foreground': 'hsl(var(--primary-foreground))',
+              secondary: 'hsl(var(--secondary))',
+              'secondary-foreground': 'hsl(var(--secondary-foreground))',
+              muted: 'hsl(var(--muted))',
+              'muted-foreground': 'hsl(var(--muted-foreground))',
+              accent: 'hsl(var(--accent))',
+              'accent-foreground': 'hsl(var(--accent-foreground))',
+              border: 'hsl(var(--border))',
+              input: 'hsl(var(--input))',
+              ring: 'hsl(var(--ring))',
+            }
+          }
+        }
+      }
+    </script>
+     <style type="text/tailwindcss">
+      @layer base {
+        :root {
+          --background: 0 0% 100%;
+          --foreground: 224 71.4% 4.1%;
+          --card: 0 0% 100%;
+          --card-foreground: 224 71.4% 4.1%;
+          --popover: 0 0% 100%;
+          --popover-foreground: 224 71.4% 4.1%;
+          --primary: 221.2 83.2% 53.3%;
+          --primary-foreground: 210 20% 98%;
+          --secondary: 220 14.3% 95.9%;
+          --secondary-foreground: 220.9 39.3% 11%;
+          --muted: 220 14.3% 95.9%;
+          --muted-foreground: 220 8.9% 46.1%;
+          --accent: 220 14.3% 95.9%;
+          --accent-foreground: 220.9 39.3% 11%;
+          --border: 220 13% 91%;
+          --input: 220 13% 91%;
+          --ring: 221.2 83.2% 53.3%;
+        }
+ 
+        .dark {
+          --background: 224 71.4% 4.1%;
+          --foreground: 210 20% 98%;
+          --card: 224 71.4% 4.1%;
+          --card-foreground: 210 20% 98%;
+          --popover: 224 71.4% 4.1%;
+          --popover-foreground: 210 20% 98%;
+          --primary: 217.2 91.2% 59.8%;
+          --primary-foreground: 210 20% 98%;
+          --secondary: 215 27.9% 16.9%;
+          --secondary-foreground: 210 20% 98%;
+          --muted: 215 27.9% 16.9%;
+          --muted-foreground: 217.9 10.6% 64.9%;
+          --accent: 215 27.9% 16.9%;
+          --accent-foreground: 210 20% 98%;
+          --border: 215 27.9% 16.9%;
+          --input: 215 27.9% 16.9%;
+          --ring: 217.2 91.2% 59.8%;
+        }
+      }
+      body {
+        @apply bg-background text-foreground font-sans;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0"
+  }
+}
+</script>
+</head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>

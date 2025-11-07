@@ -1,0 +1,5 @@
+{
+  "name": "TecnoReparos Service Manager",
+  "description": "A web system for TecnoReparos technicians to manage service orders efficiently. It allows for user authentication, creating, listing, editing, deleting, and updating the status of service orders.",
+  "requestFramePermissions": []
+}
